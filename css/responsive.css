@@ -1,0 +1,13 @@
+@media (max-width: 480px) {
+    .glass-container {
+        padding: 30px 20px;
+    }
+
+    #temp {
+        font-size: 70px;
+    }
+
+    .details-grid {
+        flex-direction: column;
+    }
+}

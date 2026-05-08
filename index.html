@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Weather</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <div class="main-wrapper">
+        <div class="glass-container">
+            <div class="search-section">
+                <div class="search-box">
+                    <i data-lucide="search"></i>
+                    <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off">
+                    <button id="searchBtn">Find</button>
+                </div>
+            </div>
+
+            <div class="display-section">
+                <div class="visual">
+                    <img src="https://openweathermap.org/img/wn/01d@4x.png" id="weatherIcon" alt="weather">
+                </div>
+                <div class="content">
+                    <h1 id="temp">28°</h1>
+                    <h2 id="cityName">Karachi</h2>
+                    <p id="condition">Cloudy Sky</p>
+                </div>
+            </div>
+
+            <div class="details-grid">
+                <div class="detail-card">
+                    <i data-lucide="droplets"></i>
+                    <span id="humidity">65%</span>
+                    <p>Humidity</p>
+                </div>
+                <div class="detail-card">
+                    <i data-lucide="wind"></i>
+                    <span id="wind">12 km/h</span>
+                    <p>Wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
